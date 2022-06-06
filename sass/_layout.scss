@@ -8,9 +8,14 @@
 
 
 .header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
+
+    display: flex;
+    justify-content: space-between; // 水平
+    align-items: center; // 垂直
 
 }
 
@@ -23,12 +28,12 @@
 
 .sidebar {
     background-color: var(--color-grey-dark-1);
-    flex: 0 0 18%; // flex-grow  flex-shrink flex-basis
+    flex: 0 0 18%; // flex-grow  flex-shrink  flex-basis(width)
 
 }
 
 
 .hotel-view {
-    background-color: #fff;
-
+    background-color: green;
+    flex: 1;
 }

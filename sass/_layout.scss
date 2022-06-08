@@ -30,10 +30,18 @@
     background-color: var(--color-grey-dark-1);
     flex: 0 0 18%; // flex-grow  flex-shrink  flex-basis(width)
 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // justify-content is for main axis, column's main axis is from top to bottom
+    
+
 }
 
 
 .hotel-view {
     background-color: green;
+
+    height: 80rem;
     flex: 1;
 }

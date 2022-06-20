@@ -9,7 +9,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px var(--color-grey-light-2) solid;
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -25,7 +25,24 @@
   justify-content: space-between; }
 
 .hotel-view {
-  height: 80rem;
+  flex: 1; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-2);
+  border-bottom: var(--line); }
+
+.descriptions {
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem; }
+
+.user-reviews {
+  background-color: plum;
   flex: 1; }
 
 .logo {
@@ -158,7 +175,7 @@
 
 .overview {
   display: flex;
-  border-bottom: 1px var(--color-grey-light-2) solid;
+  border-bottom: var(--line);
   align-items: center; }
   .overview__heading {
     font-size: 2.25rem;
@@ -224,6 +241,48 @@
     trnasform: scale(1);
     box-shadow: none; } }
 
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+  .list__item:before {
+    content: "";
+    width: .8rem;
+    height: .8rem;
+    padding: .5rem;
+    display: inline-block;
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(../img/chevron-thin-right.svg);
+    mask-size: cover; }
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  align-items: center; }
+  .recommend__count {
+    margin-right: auto; }
+  .recommend__photo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-sizing: content-box; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.5rem; }
+
 /*
 COLORS
 
@@ -252,7 +311,9 @@ Grey dark 3: #999
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px var(--color-grey-light-2) solid; }
 
 * {
   margin: 0;
